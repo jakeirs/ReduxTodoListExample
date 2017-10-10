@@ -37,3 +37,12 @@ class App extends Component {
 }
 
 export default App;
+
+/**
+ * Technically, a container component is just React component
+ * that uses 'store.subscribe()' to read a part of the Redux state tree
+ * and supply props to a presentational compoents it renders.
+ * You could write a container by hand. We suggest instead generating
+ * container components with the React Redux library's 'CONNECT'.
+ * OPTIMALIZATION. PREVENT UNNECESSARY RE-RENDERS. 
+ */
