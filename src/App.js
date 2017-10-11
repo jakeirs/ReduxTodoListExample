@@ -6,7 +6,7 @@ import VisibleTodoList from './containers/VisibleTodoList';
 /** Presentational Components */
 /*** TodoList (array) of todos {id, text, completed}
  * onTodoClick(id: number)
- *** Todo text, completed: boolean is whether todo should appear
+ *** nToDo text, completed: boolean is whether todo should appear
  *** Link: onClick is callback
  *** Footer: here user can change currently visible todos
  *** App: render everything else
@@ -24,17 +24,13 @@ import VisibleTodoList from './containers/VisibleTodoList';
  /**Other components:
   *** AddTodo 
   */
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => (
+    <div>
+         <AddTodo />
+         <VisibleTodoList />
+         <Footer />
+    </div>
+)
 
 export default App;
 
