@@ -4,8 +4,9 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import todoApp from './reducers'
 import App from './App'
+import devToolsEnhancer from 'remote-redux-devtools';
 
-let store = createStore(todoApp)
+let store = createStore(todoApp, devToolsEnhancer())
 
 render(
     <Provider store={store}>

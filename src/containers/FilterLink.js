@@ -8,6 +8,8 @@ const mapStateToProps = (state, ownProps) => {
     }
 }
 
+/** Link Component: onClick zamelduj o tym, który Link został naciśnięty
+ * i prześlij odpowiedni filter */
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onClick: () => {
