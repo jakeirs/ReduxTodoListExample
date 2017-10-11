@@ -14,7 +14,7 @@ export const setVisibilityFilter = filter => {
     }
 }
 
-
+/** responsible for changing todoTask between complete: true/false*/
 export const toggleTodo = id => {
     return {
         type: 'TOGGLE_TODO',
