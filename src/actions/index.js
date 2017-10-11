@@ -1,4 +1,12 @@
 let nextTodoId = 0
+/** action: is an JS object:
+ * {
+ *  type: 'ADD_TODO'.
+ *  text: 'Make a coffee'
+ * }
+ * */
+
+/** Actions Creators: functions that create actions: */
 export const addTodo = text => {
     return {
         type: 'ADD_TODO',

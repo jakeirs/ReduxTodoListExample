@@ -10,6 +10,9 @@ const todos = (state = [], action) => {
                 }
             ]
         case 'TOGGLE_TODO':
+            /** sprawdź wszystkie TaskTodo i ich id, jeśli ID === ID action
+             * to descruture ntodo object i zamień ntodo.completed na przeciwną wartość,
+             * w przeciwnym wypadku pozostaw obiekt bez zmian.*/
             return state.map(todo =>
                 (todo.id === action.id)
                     ? {...todo, completed: !todo.completed}
